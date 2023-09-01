@@ -6,28 +6,54 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
 
-        <title>WD Resource Hub</title>
+        <title>Alex's Resource Hub</title>
 
         <!--This link connects to my CSS file for stlying-->
         <link href='./style.css' rel='stylesheet'>
-
+        <!--This link connects to my JavaScript file-->
+        <script src="/main.js" defer></script>
     </head>
     <body>
-        <h1> Web Design Resource Hub</h1>
-        <p>These are resources to help with coding</p>
+        <header>
+        <h1 > Web Developer Resource Hub</h1>
+        </header>
+
+     <!--This div will contain the checkbox to change this website into light mode-->
+     <div class="color-switch"> 
+        <input type="checkbox" id="input-color-switch">
+        <label for="input-color-switch"> Click here to change this website into light mode</label>
+     </div>
+
+       <section class="segment"><!--This section is for coding resources-->
+        <h2>These are resources to help with coding:</h2>
         <ul>
-            <li>This <a href="https://www.w3schools.com/">website</a> has a lot of coding tutorials</li>
-            <li>This is a <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"> HTML cheatsheet</a></li>
-            <li>This is a <a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf"> CSS cheatsheet</a></li>
-            <li>This is a <a href="https://quickref.me/javascript">Javascript cheatsheet</a></li>
-            <li><a href="https://stackoverflow.com/">Stack Overflow</a> helps answer coding questions</li>
+            <li>This website <a href="https://www.w3schools.com/" target="_blank">w3schools</a> has a lot of coding tutorials</li>
+            <li>This is a <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf" target="_blank"> HTML cheatsheet</a></li>
+            <li>This is a <a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf" target="_blank"> CSS cheatsheet</a></li>
+            <li>This is a <a href="https://quickref.me/javascript" target="_blank">Javascript cheatsheet</a></li>
+            <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> helps answer coding questions</li>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> has an abundance resources for HTML, CSS, and JavaScript</li>
         </ul>
-        <p>These are resources for visual designing:</p>
+       </section>
+
+       <section class="segment"><!--This section is for aesthetics-->
+        <h2>These are resources for visual designing:</h2>
         <ul>
-            <li><a href="https://www.pexels.com/">Pexels</a> has free stock images</li>
-            <li><a href="https://coolors.co/">Coolors</a> generates color palettes</li>
-            <li><a href="https://fonts.google.com/">Google Fonts</a> provides free fonts</li>
+            <li><a href="https://www.pexels.com/" target="_blank">Pexels</a> has free stock images</li>
+            <li><a href="https://coolors.co/" target="_blank">Coolors</a> generates color palettes</li>
+            <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> provides free fonts</li>
+            <li><a href="https://dribbble.com/tags/web_design_inspiration" target="_blank">Dribbble</a> provides web designs for inspiration</li>
+            <li><a href="https://wireframe.cc/" target="_blank">Wireframe.cc</a> helps provide an outline for the structure of your website</li>
         </ul>
+      </section>
+
+      <section class="segment"><!--This section is for accesibility -->
+       <h2>These are resources for accesibility:</h2>
+       <ul>
+           <li>This <a href="https://toolness.github.io/accessible-color-matrix/" target="_blank">website</a> will determine if your color pallete is accesible</li>
+           <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM</a> will check the color contrast for accessibility</li>
+       </ul>
+      </section>
 
     </body>
 </html>

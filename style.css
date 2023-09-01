@@ -1,13 +1,73 @@
+/* I am creating variables for my colors to be able to manipulate with JavaScript */
+:root {
+         --primary-dark: #0B132B;
+         --primary-light: #FFFCFF;
+         --light-color: #C9F0FF; 
+         --dark-color: #1C2541;
+         --medium-color: #82A0B5;
+      }
 
-*{ 
-    font-family: 'Kanit', sans-serif;
-    color: #3CD34C; 
-    list-style-type: square;
+h1{
+         display: flex;
+         justify-content: center;
+       }
+
+h1 
+{
+    font-size: 3vw;
+}
+
+h1, label {
+      color:var(--primary-light);
+   }
+
+ h2, li, a { 
+          color: var(--dark-color);
+
+           }
+
+  ul, li 
+  {
+      margin-bottom: 5px;
+  }
+
+  h2 
+  {
+    margin-bottom: 2px;
+  }
+
+body { 
+       background-color: var(--primary-dark);
+       overflow-x: hidden;
+       overflow-y: auto;
+       font-size: 100%;
+     }
+
+/* styling my links so they stand out a bit more */
+a:hover{
+    color: var(--primary-dark);
+    font-weight: bolder;
+       }
+
+section{
+    border-radius: 15px;
+    border: var(--light-color) solid thick;
+    background-color:var(--medium-color);
+    padding: 15px;
+    margin: 15px;
+       }
+
+.segment {
+   display: flex;
+   flex-direction: column;
+         }
+
+.light-mode
+ { /* The following colors are now inversed so dark is light and light is dark */
+   --primary-dark: #C9F0FF;
+   --primary-light: #0B132B;
+   --light-color: #1C2541; 
+   --dark-color: #FFFCFF;
+   --medium-color: #82A0B5;
  }
 
-p{ color: #3CD34C; }
-h1 {
-    text-align: center;
-    color: #FFFCFF
-   }
-body { background-color: #222222;}
